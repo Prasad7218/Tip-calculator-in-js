@@ -1,0 +1,19 @@
+body{
+  background-color:coral;
+  display:block;
+  position:relative;
+  top:70px;
+  left:580px;
+}
+label{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+input{
+  display:flex;
+  justify-content:space-between;
+}
+.tip{
+  font-size:30px;
+}

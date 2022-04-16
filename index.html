@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1> Tip Calculator</h1>
+  <label><b>Bill Amount</b></label><br>
+    <input id="amount" placeholder="Amount to be paid" onkeypress="isNumber(event)"/>
+    <span id="inptErr" style="display:none;color:red;">Please enter numbers only</span><br>
+    <label><b>Restaurent service</b></label><br>
+    <select id="services">
+      <option  value="0.25">25%-Excellent</option>
+      <option value="0.20">20%-Best</option>
+      <option value="0.15">15%-Better</option>
+      <option value="0.10">10%-Good</option>
+    </select><br><br>
+    <label><b>Number of people</b></label><br>
+    <input id="persons" type='number'><br><br>
+   <button id="calculate" type="submit" onclick="calculate()">calculate</button>
+    <div class="tip">
+      <p>Tip Amount</p>
+      <span id="total">0Rs</span>
+      <span id="each">each</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
